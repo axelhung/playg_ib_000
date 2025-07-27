@@ -27,4 +27,4 @@ page_id = 0  # Page number for pagination
 positions = get_portfolio_positions(account_id, page_id)
 
 if positions:
-    print(positions)
+    print( json.dumps( positions , indent=4 ) )
